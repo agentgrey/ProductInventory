@@ -44,4 +44,26 @@ The following commands are available in the application:
   - Place Order
      - 7 -> 271400 -> ABC5678 -> 100
   
-    
+### Database Schema
+Table: Products
+- id (Primary Key)
+- name (Text)
+- sku (Text)
+- category (Text)
+- subCategory (Text)
+- imageLink (Text)
+
+ Table: Warehouse
+ - id (Primary Key)
+ - number (Text)
+ - name (Text)
+ - state (Text)
+ - location (Text)
+ - stock limit (integer)
+
+Table: Orders
+- id (Primary Key)
+- customerId (Text)
+- productId (Foreign Key)
+- orderQty (Integer)
+- fulfillmentStatus (Text)
